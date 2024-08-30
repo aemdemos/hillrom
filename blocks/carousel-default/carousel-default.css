@@ -1,0 +1,90 @@
+
+.carousel-default {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f0f4f8;
+  padding: 16px;
+}
+
+.carousel-default .carousel-wrapper {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-default .carousel-item {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carousel-default .carousel-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #eef3f7;
+}
+
+.carousel-default .carousel-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-default .carousel-text-container {
+  padding: 16px;
+}
+
+.carousel-default .carousel-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.carousel-default .carousel-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.carousel-default a {
+  text-decoration: none;
+}
+
+.carousel-default a:hover .carousel-title {
+  text-decoration: underline;
+}
+
+/* Scroll buttons */
+.carousel-default .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-default .carousel-button.prev {
+  left: 0;
+}
+
+.carousel-default .carousel-button.next {
+  right: 0;
+}
+
+.carousel-default .carousel-button:hover {
+  background-color: #ddd;
+}

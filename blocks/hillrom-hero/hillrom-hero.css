@@ -1,0 +1,38 @@
+
+.hillrom-hero {
+  position: relative;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url('http://localhost:3000/media_1dbc60f8c083c410e16913adf23b0bc69de91bfa9.png?width=750&format=png&optimize=medium') no-repeat center center;
+  background-size: cover;
+  padding-left: 130px; /* Left padding of 130 pixels */
+}
+
+.hillrom-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.0); /* Transparent background */
+}
+
+.hillrom-hero-heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.hillrom-hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.hillrom-hero-text-first {
+  margin-bottom: 30px;
+}

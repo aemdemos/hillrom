@@ -1,0 +1,81 @@
+
+.carousel-simple {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #f0f4f8;
+  padding: 20px;
+  font-family: roboto, sans-serif;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-simple .carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-simple .carousel-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.carousel-simple .carousel-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.carousel-simple .carousel-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.carousel-simple .carousel-text a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #035fe6;
+  font-size: 18px;
+}
+
+.carousel-simple .carousel-image {
+  flex: 1;
+}
+
+.carousel-simple .carousel-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}

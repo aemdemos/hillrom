@@ -1,0 +1,83 @@
+
+.cards-basic {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.cards-basic .card-item {
+  position: relative;
+  flex: 1;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cards-basic .card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cards-basic .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards-basic .card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.cards-basic .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cards-basic .first-word {
+  display: block;
+}
+
+.cards-basic .read-more-link {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.cards-basic .read-more-link:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cards-basic .read-more-link::before {
+  content: attr(data-category);
+  display: block;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.cards-basic .read-more-link[data-category="INFOGRAPHIC"]::before {
+  content: 'INFOGRAPHIC';
+}
+
+.cards-basic .read-more-link[data-category="WHITEPAPER"]::before {
+  content: 'WHITEPAPER';
+}
+
+.cards-basic .read-more-link[data-category="ARTICLE"]::before {
+  content: 'ARTICLE';
+}

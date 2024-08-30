@@ -1,0 +1,41 @@
+
+.cards-blue {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+}
+
+.cards-blue-item {
+  position: relative;
+  width: 30%;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cards-blue-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cards-blue-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #154898;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.cards-blue-link h2 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.cards-blue-link-text {
+  text-decoration: none;
+}
